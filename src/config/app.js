@@ -1,4 +1,4 @@
-export default {
+const app =  {
   // Describe the project's name
   name: process.env.REACT_APP_NAME,
   
@@ -11,3 +11,5 @@ export default {
     robots: process.env.REACT_APP_API_ROBO_IMG
   }
 }
+
+export default app;

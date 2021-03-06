@@ -1,3 +1,5 @@
 import app from './app';
 
-export default { app };
+const config = { app };
+
+export default config;
