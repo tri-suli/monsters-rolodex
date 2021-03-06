@@ -33,6 +33,17 @@ class User {
     this.email = '';
     this.name = '';
   }
+
+  /**
+   * Get the list of users that already filterized
+   * by some keywords.
+   * 
+   * @param {string} keyword
+   * @param {Array<User>} users
+   */
+  public static filter (keyword: string, users: Array<User>): Array<User> {
+    return users.filter((user: User) => user.name.toLocaleLowerCase().includes(keyword.toLocaleLowerCase()));
+  }
 }
 
 export default User;
