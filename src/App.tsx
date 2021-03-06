@@ -21,11 +21,7 @@ class App extends Component {
   render (): JSX.Element {
     return (
       <div className="App">
-        <CardList>
-          {this.state.users.map((user: User, key: number) => (
-            <h2 key={key}>{user.name}</h2>
-          ))}
-        </CardList>
+        <CardList monsters={this.state.users} />
       </div>
     );
   }

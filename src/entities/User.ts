@@ -2,26 +2,26 @@ class User {
   /**
    * The user id's
    * 
-   * @var {string|null}
+   * @var {string}
    * @public
    */
-  public id: number | null;
+  public id: number;
 
   /**
    * The user email's
    * 
-   * @var {string|null}
+   * @var {string}
    * @public
    */
-  public email: string| null;
+  public email: string;
 
   /**
    * The user name's
    * 
-   * @var {string|null}
+   * @var {string}
    * @public
    */
-  public name: string | null;
+  public name: string;
 
   /**
    * Create a new instance of this class
@@ -29,9 +29,9 @@ class User {
    * @returns {void}
    */
   constructor () {
-    this.id = null;
-    this.email = null;
-    this.name = null;
+    this.id = 0;
+    this.email = '';
+    this.name = '';
   }
 }
 
